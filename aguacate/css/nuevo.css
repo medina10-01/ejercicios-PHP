@@ -1,0 +1,12 @@
+.menu{
+   display: grid;
+   justify-content: center;
+}
+.new{
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
