@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid green;
+    border-radius: 15px;
+}
+.header{
+    font-size: 6vh;
+    font-style: oblique;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.cliente, .auto{
+    font-size: 3vh;
+    margin-right: 300px ;
+}
+.puestos{
+    font-size: 3vh;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 133, 24);
+}
+.menu{
+    margin-top: 20px;
+    background-color: rgba(168, 196, 248, 0.175);
+    border: 2px solid green;
+    border-radius: 13px;
+    padding: 10px;
+}
+.menu:hover{
+    background-color: rgb(255, 255, 255);
+}
+.send{
+    margin-left: 5px;
+    width: 120px;
+}
+.datos{
+    width: 550px;
+    height: 50px;
+}
+.date_con{
+    margin-top: 30PX;
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-top: 30px;
+    border: 1px solid;
+    width: 100%;
+}
+th, td{
+    border: 1px solid;
+}
+.but{
+    width: 100px;
+}
+.margin{
+    padding: 0px 100px 0px 100px;
+}
+.espace1{
+    background-color: rgb(220, 245, 221);
+}
+.atualizar{
+    background-color: rgba(0, 221, 255, 0.556);
+}
+.borrar{
+    background-color: rgba(255, 98, 0, 0.706);
+}
+.buscar_cli{
+    display: grid;
+justify-content: center;
+}

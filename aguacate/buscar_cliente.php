@@ -19,23 +19,26 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar Cliente</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div>
         <form action="busqueda.php" method='POST'>
-            <h1>Buscar usuarios</h1>
-            <input type="text" name="cedula" class="cedula" placeholder='Ingrese el número de documento'>
-            <input type="submit" value="Buscar" >
+            <div class="title"><h1 class="header">Buscar usuarios</h1></div>
+            <div class="date_con">
+                <input type="text" name="cedula" class="cedula datos" placeholder='Ingrese el número de documento del usuario'>
+                <input type="submit" value="Buscar"  class="send">
+            </div>
         </form>
     </div>
-    <div>
+    <div class="print">
         <table>
             <thead>
                 <tr>
-                    <th>Documento</th>
-                    <th>Nombres</th>
-                    <th></th>
-                    <th></th>
+                    <th class="espace1">Documento</th>
+                    <th class="espace1">Nombres</th>
+                    <th class="but">Action</th>
+                    <th class="but">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,8 +46,8 @@ $query = mysqli_query($con, $sql);
                     <tr>
                         <td><?= $row['cedula'] ?></td>
                         <td><?= $row['nombre'] ?></td>
-                        <td><a href="update_user.php?id=<?= $row['cedula'] ?>">Actualizar</a></td>
-                        <td><a href="delete_user.php?id=<?= $row['cedula'] ?>">Eliminar</a></td>
+                        <td class="atualizar"><a href="update_user.php?id=<?= $row['cedula'] ?>">Actualizar</a></td>
+                        <td class="borrar"><a href="delete_user.php?id=<?= $row['cedula'] ?>">Eliminar</a></td>
                     </tr>
                 <?php endwhile ?>
             </tbody>
